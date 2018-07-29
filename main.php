@@ -22,7 +22,6 @@ $save = new downloadFile();
 $filesize = $save->getSize($message);
 sendMessage ($chatId, "File Size in MB: " . round($filesize / 1024 / 1024, 2));
 sendMessage ($chatId, "Downloading...");
-https://aminvakil.com/mba/%D8%A8%D8%B1%D9%86%D8%AF%DB%8C%D9%86%DA%AF%20-%20%D8%AC%D9%84%D8%B3%D9%87%201%20-%2097.3.31.mp3
 //here is where we actually copy the file
 $returnData = $save->saveFile($message,$folder);
 //next lets log the download to a file called "logs.php.inc"
